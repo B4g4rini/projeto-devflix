@@ -29,14 +29,9 @@ const MovieDesc = ({ movies, click }) => {
               <img src={devFlix} alt="Logo DEVFLIX" />
               {movie.Type}
               <h1>{movie.Title}</h1>
-              <a
-                href={`https://google.com/search?q=${encodeURIComponent(
-                  movie.Title
-                )}`}
-                target="_blank"
-              >
-                ▶️Assitir
-              </a>
+              
+            
+              
             </div>
           </div>
         </div>
