@@ -5,11 +5,6 @@
   --font-family: "Inria Sans", sans-serif;
 }
 
-:root {
-  --font-raleway: "Raleway", sans-serif;
-  --font-family: "Inria Sans", sans-serif;
-}
-
 * {
   margin: 0;
   border: 0;
@@ -20,19 +15,21 @@
 body {
   background: #18122b;
 }
+
 #my-image {
   top: 0;
   left: 0;
   z-index: 1000;
   animation: fade-out 2s linear forwards;
-
   position: fixed;
   background: #18122b;
 }
+
 #my-image img {
   visibility: visible;
   width: 100%;
 }
+
 @keyframes fade-out {
   0% {
     visibility: visible;
@@ -58,6 +55,7 @@ body {
   overflow: hidden;
   transition: all 0.4s;
 }
+
 .logo:hover {
   transform: scale(1.05, 1.05);
 }
@@ -73,11 +71,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.1rem 1.5rem;
+  padding: 0.1rem 1.50rem;
   border-radius: 50px;
   background: #1e1738;
   position: absolute;
-  display: flex;
   box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
   right: 6em;
   top: 0;
@@ -108,9 +105,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
   color: #f9d3b4;
 }
+
 .trending {
   color: #443c68;
   font-family: Gurajada;
@@ -120,6 +117,7 @@ body {
   line-height: normal;
   padding-top: 3em;
 }
+
 .fire {
   width: 50px;
   height: 40px;
@@ -154,29 +152,50 @@ body {
 
 @media screen and (max-width: 600px) {
   #app {
-    padding: 3rem 2rem;
+    padding: 3rem 1rem;
   }
   .search {
     padding: 1rem 1.75rem;
     width: 100%;
+    right: 0;
   }
   .search input {
     font-size: 1rem;
   }
-
   .search img {
     width: 20px;
     height: 20px;
   }
+  .logo {
+    position: static;
+    display: block;
+    max-width: 100%;
+    margin: 1rem auto;
+  }
+  .logo img {
+    width: 70%;
+    height: auto;
+  }
+  .recomendado {
+    font-size: 24px;
+    padding-top: 1rem;
+  }
+  .container {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+    padding-left: 0;
+  }
+  .sectio {
+    display: inline-block;
+    width: 100%;
+    padding-left: 0;
+    width: 0px;
+  }
 }
 
-.sectio {
-  display: flex;
-  width: 404%;
-  padding-left: 110em;
-}
-
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 400px) {
   #app {
     padding: 3rem 1rem;
   }
@@ -186,14 +205,12 @@ body {
   .container {
     margin-top: 2rem;
   }
-
   .logo {
     margin: 35px;
   }
   .search {
     width: 100%;
   }
-
   .movie {
     width: 100%;
     margin: 1rem;
@@ -205,140 +222,56 @@ body {
   }
 }
 
-@media screen and (max-width: 600px) {
-  #app {
-    padding: 3rem 2rem;
+  @media screen and (max-width: 600px) {
+    #app{
+        padding: 4rem 2rem;
+    }
+    .search{
+        padding: 1rem 1.75rem;
+        width: 100%;
+    }
+    .search input { 
+        font-size: 1rem;
+    }
+  
+    .search img{
+        width: 20px;
+        height: 20px;
+    }
+    
+  
   }
-  .search {
-    padding: 1rem 1.75rem;
-    width: 100%;
-    right: 0;
-  }
-  .search input {
-    font-size: 1rem;
-  }
-
-  .search img {
-    width: 20px;
-    height: 20px;
-  }
-
-  .logo {
-    position: static;
-    display: block;
-    max-width: 100%;
-    margin: 1rem auto;
-  }
-
-  .logo img {
-    width: 70%;
-    height: auto;
-  }
-
-  .recomendado {
-    font-size: 24px;
-    padding-top: 1rem;
-  }
-
-  .container {
-    width: 100%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    justify-content: center;
-    padding-left: 0;
-  }
-
-  .sectio {
-    display: flex;
+  
+  @media screen and (max-width: 400px){
+    #app{
+        padding: 4rem 1rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .container{
+        margin-top: 2rem;
+    }
+    .movie{
+        width: 100%;
+        margin: 1rem;
+        
+    }
+      .sectio {
+    display: inline-block;
     width: 100%;
     padding-left: 0;
-
+    width: 0px;
+    
   }
-}
-
-@media screen and (max-width: 600px) {
-  #app {
-    padding: 2rem 1rem; /* Ajuste o padding conforme necessário */
-  }
-  .search {
-    padding: 1rem 1.5rem; /* Ajuste o padding conforme necessário */
-    width: 100%;
-    right: 0;
-  }
-  .search input {
-    font-size: 1rem;
   }
 
-  .search img {
-    width: 20px;
-    height: 20px;
-  }
 
-  .logo {
-    position: static;
-    display: block;
-    max-width: 100%;
-    margin: 1rem auto;
-  }
 
-  .logo img {
-    width: 70%;
-    height: auto;
-  }
 
-  .recomendado {
-    font-size: 24px;
-    padding-top: 1rem;
-  }
 
-  .container {
-    width: 100%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    justify-content: center;
-    padding-left: 0;
-  }
 
-  .sectio {
-    display: flex;
-    width: 100%;
-    padding-left: 0;
-  }
-}
 
-@media screen and (max-width: 431px) {
-  #app {
-    padding: 2rem 0.5rem; /* Ajuste o padding conforme necessário */
-  }
-  h1 {
-    font-size: 1.5rem; /* Ajuste o tamanho da fonte conforme necessário */
-  }
-  .container {
-    margin-top: 1rem; /* Ajuste a margem conforme necessário */
-    display: block;
-  }
 
-  .logo {
-    margin: 15px; /* Ajuste a margem conforme necessário */
-  }
 
-  .search {
-    width: 100%;
-    padding: 0.5rem 1rem; /* Ajuste o padding conforme necessário */
-  }
 
-  .search input {
-    font-size: 0.8rem; /* Ajuste o tamanho da fonte conforme necessário */
-  }
-
-  .movie {
-    width: 100%;
-    margin: 0.5rem; /* Ajuste a margem conforme necessário */
-  }
-  .sectio {
-    display: block;
-    width: 100%;
-    padding-left: 0;
-    columns: 10px;
-  }
-}

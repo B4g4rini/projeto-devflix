@@ -5,7 +5,7 @@ import searchIcon from "../assets/Vector.svg";
 
 
 import "./App.css";
-import MovieCard from "../components/MovieCard/movieCard";
+import MovieCard from "../components/moviecard/movieCard";
 import Footer from "../components/footer/footer";
 import Moviecards from "../components/moviecards/moviecards";
 

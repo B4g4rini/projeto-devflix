@@ -1,6 +1,6 @@
 import { useState } from "react";
 import MovieDesc from "../movieDescription/movieDescription";
-import styles from "./moviecard.module.css";
+import styles from "./movieCard.module.css";
 
 const MovieCard = ({ movies }) => {
   const movie = movies;
