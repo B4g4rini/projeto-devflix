@@ -5,6 +5,11 @@
   --font-family: "Inria Sans", sans-serif;
 }
 
+:root {
+  --font-raleway: "Raleway", sans-serif;
+  --font-family: "Inria Sans", sans-serif;
+}
+
 * {
   margin: 0;
   border: 0;
@@ -153,26 +158,7 @@ padding-top: 3em;
     padding-top: 10px;
 }
 
-@media screen and (max-width: 600px) {
-  .app {
-    padding: 4rem 2rem;
-    
-  }
-  .search {
-    padding: 1rem 1.75rem;
-    width: 100%;
-  }
-  .search input {
-    font-size: 1rem;
-  }
 
-  .search img {
-    width: 20px;
-    height: 20px;
-  }
-
-
-}
 
 .sectio {
   display: flex;
@@ -182,19 +168,36 @@ padding-top: 3em;
 
 }
 
-@media screen and (max-width: 400px) {
-  .app {
-    padding: 4rem 1rem;
+@media screen and (max-width: 430px) {
+  #app {
+    padding: 3rem 1rem;
   }
-  h2 {
+  h1 {
     font-size: 2rem;
   }
   .container {
     margin-top: 2rem;
+  }
+  
+  .logo {
+    margin: 35px ;
+  }
+  .search {
+    width: 100%;
   }
 
   .movie {
     width: 100%;
     margin: 1rem;
   }
+  .sectio {
+    display: flex;
 }
+ }
+
+
+
+
+
+
+
