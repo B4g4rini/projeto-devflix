@@ -3,9 +3,8 @@ import { useEffect, useState } from "react";
 import logo from "../assets/devflix2.png";
 import searchIcon from "../assets/Vector.svg";
 
-
 import "./App.css";
-import MovieCard from "../components/moviecard/movieCard";
+import MovieCard from "../components/moviecard/moviecard";
 import Footer from "../components/footer/footer";
 import Moviecards from "../components/moviecards/moviecards";
 
@@ -50,7 +49,6 @@ const App = () => {
         <a>
           Trending Now
           <img className="fire" src="src/assets/mdi_fire.svg" alt="" />
-          
         </a>
         <div className="search">
           <input
@@ -83,8 +81,11 @@ const App = () => {
         <p>
           <a>
             Recomended
-            <img className="play" src="src/assets/streamline_entertainment-control-button-play-button-television-buttons-movies-play-tv-video-controls.svg" alt="" />
-            
+            <img
+              className="play"
+              src="src/assets/streamline_entertainment-control-button-play-button-television-buttons-movies-play-tv-video-controls.svg"
+              alt=""
+            />
           </a>
         </p>
       </div>
