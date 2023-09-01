@@ -2,12 +2,13 @@
     width: 535px;
     height: 316px;
     margin: 1.5rem;
-
     position: relative;
     overflow: hidden;
     border: none;
     box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.4);
     border-radius:50px;
+    
+
   
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
@@ -20,6 +21,8 @@
     opacity: 0;
     top: 0;
     color: #f9d3b4;
+    
+    
   }
   
   .movie:hover {
@@ -40,7 +43,7 @@
   .movie div:nth-of-type(3) {
     z-index: 2;
     background: #393053;
-  
+    white-space: normal;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -54,11 +57,14 @@
     letter-spacing: 2px;
     font-weight: bold;
     color: #f0f0f0;
+    
   }
   
   .movie div:nth-of-type(3) h3 {
     margin-top: 5px;
     color: #f9d3b4;
+    
+    
   }
   
   .movie:hover div:nth-of-type(2) {

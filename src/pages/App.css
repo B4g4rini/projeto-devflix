@@ -21,9 +21,11 @@ body {
     left: 0;
     z-index: 1000000000000;
     background: #18122b;
-    animation: fade-out 2s linear forwards;
-}
-#my-image img{
+  }
+  #my-image img{
+  /* animation: fade-out 2s linear forwards;
+  display: none;
+  position: fixed; */
     visibility: visible;
     width: 100%;
 }
@@ -74,6 +76,10 @@ body {
   box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
   right: 6em;
   top: 0;
+ 
+
+
+  
 }
 
 .search input {
@@ -113,6 +119,7 @@ body {
   line-height: normal;
 padding-top: 3em;
 
+
 }
 
 .container {
@@ -120,13 +127,11 @@ padding-top: 3em;
   margin-top: 0rem;
   margin-bottom: 3em;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
   overflow-x: auto;
-
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .recomendado {
@@ -142,6 +147,7 @@ padding-top: 3em;
 @media screen and (max-width: 600px) {
   .app {
     padding: 4rem 2rem;
+    
   }
   .search {
     padding: 1rem 1.75rem;
@@ -155,10 +161,16 @@ padding-top: 3em;
     width: 20px;
     height: 20px;
   }
+
+
 }
 
 .sectio {
   display: flex;
+  width: 404%;
+  padding-left: 110em;
+
+
 }
 
 @media screen and (max-width: 400px) {
@@ -171,6 +183,7 @@ padding-top: 3em;
   .container {
     margin-top: 2rem;
   }
+
   .movie {
     width: 100%;
     margin: 1rem;
