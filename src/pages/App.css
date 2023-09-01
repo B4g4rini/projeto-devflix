@@ -16,16 +16,16 @@ body {
   background: #18122b;
 }
 #my-image{
-    position: absolute;
+    
     top: 0;
     left: 0;
-    z-index: 1000000000000;
+    z-index: 1000;
+    animation: fade-out 2s linear forwards;
+  
+    position: fixed;
     background: #18122b;
   }
   #my-image img{
-  /* animation: fade-out 2s linear forwards;
-  display: none;
-  position: fixed; */
     visibility: visible;
     width: 100%;
 }
@@ -118,8 +118,17 @@ body {
   font-weight: 400;
   line-height: normal;
 padding-top: 3em;
+}
+.fire {
+  width: 50px;
+  height: 40px; 
+  
+ 
+}
 
-
+.play {
+  width: 50px;
+  height: 40px;
 }
 
 .container {
